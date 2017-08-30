@@ -25,7 +25,13 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .links a {
-    margin-top: 1em;
+  h1 {
+    margin: 0.5em 0;
+  }
+  .links .col {
+    margin-top: 2rem;
+  }
+  .meta {
+    margin-top: 5rem;
   }
 }
