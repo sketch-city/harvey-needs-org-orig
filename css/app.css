@@ -1,0 +1,31 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  background: #ecf0f1;
+}
+h1 {
+  margin: 1em 0;
+}
+.links a.btn {
+  background: #8e44ad;
+  color: #ecf0f1;
+}
+
+.links a.btn:hover {
+  color: #bdc3c7;
+}
+
+.meta {
+  margin-top: 10rem;
+}
+
+@media (max-width: 767px) {
+  .links a {
+    margin-top: 1em;
+  }
+}
