@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <meta name="keywords" content="Tropical Storm Harvey, East Texas Storm, Houston Flood 2017, Find Houston Shelter, Flood shelter, hurricane rescue, Where to donate, Cajun Navy, Texas Flood, Hurricane Harvey">
     <link rel="shortcut icon" href="images/favicon_1.ico">
 
-    <title>Harvey Connect - Needs and Shelters information</title>
+    <title>Harvey Needs - Needs and Shelters Information</title>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -76,17 +76,23 @@
                 <!-- LOGO -->
                 <a class="navbar-brand logo" href="index.html">
                     <i class="glyphicon glyphicon-stats"></i>
-                    <span>Harvey Connect</span>
+                    <span>Harvey Needs</span>
                 </a>
             </div>
             <!-- end navbar-header -->
             <!-- menu -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li>
-                      <a href="#how-it-work">How it work</a>
+                    <li>
+                        <a href="https://sketch-city.github.io/harvey-needs" target="_blank">Current Needs</a>
                     </li>
                     <li>
+                        <a href="#houston_shelter_map" target="_blank">Houston Shelter Map</a>
+                    </li>
+                    <li>
+                        <a href="#faq" target="_blank">What is this?</a>
+                    </li>
+                    <!--<li>
                       <a href="#features">Features</a>
                     </li>
                     <li>
@@ -115,11 +121,8 @@
                     <div class="home-wrapper text-center">
                         <h1 class="animated fadeInDown wow" data-wow-delay=".1s">HURRICANE HARVEY HOUSTON FLOOD EMERGENCY RESOURCES</h1>
                         <p class="animated fadeInDown wow" data-wow-delay=".2s">If you need supplies or volunteer help, or If you would like to share information about a shelter, please fill out this form.</p>
-                        <a href="https://goo.gl/VdL2Sy" target="_blank" class="btn btn-primary btn-rounded w-lg animated fadeInDown wow" data-wow-delay=".4s">
-
-                            Harvey Volunteer / Supply needs
-                        </a>
-                        <a href="https://goo.gl/EqYKQJ" target="_blank" class="btn btn-primary btn-rounded w-lg animated fadeInDown wow" data-wow-delay=".4s">Harvey Shelter Availability</a>
+                        <a href="https://goo.gl/VdL2Sy" target="_blank" class="btn btn-primary btn-rounded w-lg animated fadeInDown wow" data-wow-delay=".4s">Harvey Volunteer / Supply needs Form</a>
+                        <a href="https://goo.gl/EqYKQJ" target="_blank" class="btn btn-primary btn-rounded w-lg animated fadeInDown wow" data-wow-delay=".4s">Harvey Shelter Availability Form</a>
                         <div class="clearfix"></div>
 
                     </div>
@@ -128,6 +131,20 @@
         </div>
     </section>
     <!-- END HOME -->
+
+    <section class="section" id="houston_shelter_map">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <object id="shelter_map" type="text/html" data="https://johnnyqbui.github.io/Houston-Shelters/" height="550px" width="100%"></object>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="section bg-gray" id="faq">
         <div class="container">
@@ -200,6 +217,15 @@
                 delay: 100,
                 time: 1200
             });
+
+            
+            $("#btn_fullscreen").on("click", function () {
+                var elem = document.getElementById("shelter_map");
+
+                req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
+                req.call(elem);
+            });
+            
         });
     </script>
 
