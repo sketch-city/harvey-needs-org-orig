@@ -84,7 +84,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="https://sketch-city.github.io/harvey-needs" target="_blank">Current Needs</a>
+                        <a href="#form_buttons" target="_blank">Forms</a>
+                    </li>
+                    <li>
+                        <a href="#quick_links" target="_blank">Resource Links</a>
                     </li>
                     <li>
                         <a href="#houston_shelter_map" target="_blank">Houston Shelter Map</a>
@@ -113,7 +116,7 @@
 
 
     <!-- HOME -->
-    <section class="home bg-img-1 parallax" data-stellar-background-ratio="0.5">
+    <section class="home bg-img-1 parallax" id="form_buttons" data-stellar-background-ratio="0.5">
         <div class="bg-overlay"></div>
         <div class="container">
             <div class="row">
@@ -126,6 +129,40 @@
                         <div class="clearfix"></div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gray" id="quick_links">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Resource Links</h1>
+                <div class="col-sm-3">
+                    <h2>Victims</h2>
+                    <h4>Local shelter info &amp; availability</h4>
+                    <a href="https://johnnyqbui.github.io/Houston-Shelters/" class="btn btn-primary btn-rounded w-lg">Map: Shelters &amp; Availability</a>
+                    <h4>If you need rescue</h4>
+                    <p><a href="http://houstonharveyrescue.com/" class="btn btn-primary btn-rounded w-lg">HoustonHarveyRescue.com</a></p>
+                    <p><a href="http://www.texasrescuemap.com" class="btn btn-primary btn-rounded w-lg">TexasRescueMap.com</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Rescue Workers</h2>
+                    <h4>Rescuers: Locate People</h4>
+                    <p><a href="http://houstonharveyrescue.com/" class="btn btn-primary btn-rounded w-lg">HoustonHarveyRescue.com</a></p>
+                    <p><a href="http://www.texasrescuemap.com" class="btn btn-primary btn-rounded w-lg">TexasRescueMap.com</a></p>
+                    <h4>Dispatchers: Locate Boats</h4>
+                    <p><a href="http://www.texasrescuemap.com/" class="btn btn-primary btn-rounded w-lg">TexasRescueMap.com</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Volunteers/Donors</h2>
+                    <p><a href="https://sketch-city.github.io/harvey-needs/" class="btn btn-primary btn-rounded w-lg">Map: Volunteer &amp; Supply Needs</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>Shelters</h2>
+                    <dl>
+                        <a href="https://goo.gl/EqYKQJ" target="_blank" class="btn btn-primary btn-rounded w-lg">Harvey Shelter Availability Form</a>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -153,7 +190,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h1 class="title zoomIn animated wow" data-wow-delay=".1s">What is this?</h1>
-                    <p class="sub-title zoomIn animated wow" data-wow-delay=".2s">This is built by Sketch City, a civic technology community in Houston. To participate in data collection, curation, or any other help, please join us through http://sketchcity.herokuapp.com/ </p>
+                    <p class="sub-title zoomIn animated wow" data-wow-delay=".2s">This is built by Sketch City, a civic technology community in Houston. To participate in data collection, curation, or any other help, please join us through <a href="http://sketchcity.herokuapp.com/">http://sketchcity.herokuapp.com/</a></p>
                 </div>
             </div> <!-- end row -->
 
@@ -218,14 +255,14 @@
                 time: 1200
             });
 
-            
+
             $("#btn_fullscreen").on("click", function () {
                 var elem = document.getElementById("shelter_map");
 
                 req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
                 req.call(elem);
             });
-            
+
         });
     </script>
 
